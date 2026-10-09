@@ -13,20 +13,22 @@ a{color:inherit}.page{width:min(1480px,100%);margin:auto;padding:30px clamp(16px
 h1{max-width:720px;margin:0;font-size:clamp(2.6rem,6vw,5.35rem);line-height:.99;letter-spacing:-.065em}h1 span{color:#aa9bff}.intro{max-width:620px;margin:20px 0 0;color:var(--muted);font-size:1.03rem;line-height:1.7}
 .video-card{padding:17px;border:1px solid var(--line);border-radius:20px;background:#11182bd9;box-shadow:0 22px 70px #0004}.video-heading{margin-bottom:12px;font-size:.9rem}.video-heading span{color:var(--muted);font-size:.72rem}.video-heading a{color:#c5bbff;font-size:.75rem;text-decoration:none}.video-heading a:hover{text-decoration:underline}.video-frame{position:relative;overflow:hidden;width:100%;aspect-ratio:16/9;border:1px solid #ffffff1c;border-radius:12px;background:radial-gradient(ellipse at 25% 10%,#8266d12d,transparent 60%),linear-gradient(135deg,#171d37,#0a1220)}.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.video-launch{position:absolute;inset:0;display:grid;width:100%;place-content:center;justify-items:center;gap:12px;border:0;color:#f3f4ff;background:transparent;font:inherit;cursor:pointer}.play-icon{display:grid;width:56px;height:56px;place-items:center;padding-left:4px;border:1px solid #d1c8ff88;border-radius:50%;color:white;background:#9a8cff38;box-shadow:0 0 34px #9a8cff3d;font-size:1.25rem;transition:transform .18s,background .18s}.video-launch:hover .play-icon,.video-launch:focus-visible .play-icon{transform:scale(1.08);background:#9a8cff70}.video-launch:focus-visible{outline:2px solid #c9bfff;outline-offset:-4px}.video-launch span:last-child{color:#c3c9dc;font-size:.8rem}
 .table-section{padding:22px;border:1px solid var(--line);border-radius:24px;background:#0c1223c9;box-shadow:0 28px 90px #0004}.table-head{flex-wrap:wrap;margin-bottom:21px}.table-title{margin:0;font-size:1.15rem}.table-subtitle{margin:5px 0 0}.tools{display:flex;flex-wrap:wrap;gap:9px}
-input,select{min-height:42px;padding:0 13px;border:1px solid var(--line);border-radius:11px;outline:none;color:var(--ink);background:#10182b;font:inherit;font-size:.83rem}input{width:min(240px,55vw)}input:focus,select:focus{border-color:#a99aff;box-shadow:0 0 0 3px #a99aff24}
+input,select{min-height:42px;padding:0 13px;border:1px solid var(--line);border-radius:11px;outline:none;color:var(--ink);background:#10182b;font:inherit;font-size:.83rem}input{width:min(240px,55vw)}input:focus,select:focus,input.has-selection,select.has-selection{border-color:#c4b5fd;box-shadow:0 0 0 2px #c4b5fd35,0 0 16px #8b5cf680}
 .table-scroll{overflow-x:auto;padding-bottom:10px;scrollbar-color:#525075 #111728}.periodic-grid{display:grid;grid-template-columns:repeat(18,minmax(54px,1fr));grid-template-rows:repeat(7,76px);gap:5px;min-width:1120px}
-.element{display:flex;min-width:0;flex-direction:column;justify-content:space-between;padding:7px;border:1px solid var(--edge,#ffffff2b);border-radius:9px;color:var(--ink);background:var(--tile,#ffffff12);text-align:left;cursor:pointer;transition:transform .16s,filter .16s}.element:hover,.element:focus-visible{z-index:1;transform:translateY(-3px) scale(1.04);filter:brightness(1.2);outline:2px solid #ffffff8c}.element[hidden]{display:none}.atomic-number{color:#f5f6ffb8;font-size:.62rem}.symbol{align-self:center;font-size:1.45rem;font-weight:780;line-height:1}.element-name{overflow:hidden;color:#f5f6ffd4;font-size:.57rem;text-overflow:ellipsis;white-space:nowrap}
-.series-toggle{align-items:center;gap:2px;border-color:#67bcff61;background:linear-gradient(145deg,#4ba7ef26,#778aff2b);text-align:center}.series-toggle .atomic-number{align-self:flex-start}.series-toggle .symbol{font-size:1.05rem}.series-toggle .element-name{align-self:center;max-width:100%;font-size:.47rem;line-height:1.05;white-space:normal;overflow-wrap:anywhere}.series-disclosure{display:none}.series-disclosure.is-open{display:block}.series-panel-inner{overflow:hidden}.series-panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:17px 2px 10px}.series-panel-title{margin:0;font-size:.92rem}.series-close{padding:6px 10px;border:1px solid var(--line);border-radius:9px;color:var(--muted);background:#10182b;font:inherit;font-size:.75rem;cursor:pointer}.series-close:hover{color:var(--ink);border-color:#a99aff}.series-grid{display:grid;grid-template-columns:repeat(15,minmax(54px,1fr));gap:5px;min-width:900px;padding:2px 1px 8px}
-.alkali{--tile:#ff708326;--edge:#ff829761}.alkaline{--tile:#ffae5c26;--edge:#ffbe7061}.transition{--tile:#ffd76722;--edge:#ffde7b57}.post-transition{--tile:#4dd0b324;--edge:#65e4c259}.metalloid{--tile:#57beeb26;--edge:#71d2fa61}.nonmetal{--tile:#5992ff29;--edge:#76a4ff66}.halogen{--tile:#a682ff2b;--edge:#b99fff66}.noble{--tile:#ee7cda29;--edge:#f499e366}.lanthanoid{--tile:#4ba7ef26;--edge:#67bcff61}.actinoid{--tile:#778aff2b;--edge:#91a0ff66}
-.series-label{grid-column:1/3;display:flex;align-items:center;padding-left:8px;color:var(--muted);font-size:.62rem;line-height:1.4}.legend{display:flex;flex-wrap:wrap;gap:10px 17px;margin-top:15px}.legend-item{display:inline-flex;align-items:center;gap:7px;color:var(--muted);font-size:.72rem}.dot{width:9px;height:9px;border-radius:3px;background:var(--dot)}
+.element{display:flex;min-width:0;flex-direction:column;justify-content:space-between;padding:7px;border:1px solid var(--edge,#ffffff2b);border-radius:9px;color:var(--ink);background:var(--tile,#ffffff12);text-align:left;cursor:pointer;transition:transform .16s,filter .16s,box-shadow .2s,border-color .2s}.element:hover,.element:focus-visible{z-index:1;transform:translateY(-3px) scale(1.04);filter:brightness(1.2);outline:2px solid #ffffff8c}.element[hidden]{display:none}.element.is-selected,.series-toggle[aria-expanded="true"]{border-color:var(--glow);box-shadow:inset 0 0 12px color-mix(in srgb,var(--glow) 72%,transparent),inset 0 0 27px color-mix(in srgb,var(--glow) 48%,transparent);filter:brightness(1.15)}.atomic-number{color:#f5f6ffb8;font-size:.62rem}.symbol{align-self:center;font-size:1.45rem;font-weight:780;line-height:1}.element-name{overflow:hidden;color:#f5f6ffd4;font-size:.57rem;text-overflow:ellipsis;white-space:nowrap}
+.series-toggle{align-items:center;gap:2px;border-color:#67bcff61;background:linear-gradient(145deg,#4ba7ef26,#778aff2b);text-align:center}.series-toggle .atomic-number{align-self:flex-start}.series-toggle .symbol{font-size:1.05rem}.series-toggle .element-name{align-self:center;max-width:100%;font-size:.47rem;line-height:1.05;white-space:normal;overflow-wrap:anywhere}.series-disclosure{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .28s ease,opacity .28s ease}.series-disclosure.is-open{grid-template-rows:1fr;opacity:1}.series-panel-inner{min-height:0;overflow:hidden}.series-panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:17px 2px 10px}.series-panel-title{margin:0;font-size:.92rem}.series-close{padding:6px 10px;border:1px solid var(--line);border-radius:9px;color:var(--muted);background:#10182b;font:inherit;font-size:.75rem;cursor:pointer}.series-close:hover{color:var(--ink);border-color:#a99aff}.series-grid{display:grid;grid-template-columns:repeat(15,minmax(54px,1fr));gap:5px;min-width:900px;padding:2px 1px 8px}
+.alkali{--tile:#ff708326;--edge:#ff829761;--glow:#ff7083}.alkaline{--tile:#ffae5c26;--edge:#ffbe7061;--glow:#ffae5c}.transition{--tile:#ffd76722;--edge:#ffde7b57;--glow:#ffd767}.post-transition{--tile:#4dd0b324;--edge:#65e4c259;--glow:#4dd0b3}.metalloid{--tile:#57beeb26;--edge:#71d2fa61;--glow:#57beeb}.nonmetal{--tile:#5992ff29;--edge:#76a4ff66;--glow:#5992ff}.halogen{--tile:#a682ff2b;--edge:#b99fff66;--glow:#a682ff}.noble{--tile:#ee7cda29;--edge:#f499e366;--glow:#ee7cda}.lanthanoid{--tile:#4ba7ef26;--edge:#67bcff61;--glow:#4ba7ef}.actinoid{--tile:#778aff2b;--edge:#91a0ff66;--glow:#778aff}
+.series-label{grid-column:1/-1;display:flex;align-items:center;padding:8px 2px 3px;color:var(--muted);font-size:.68rem;font-weight:700;letter-spacing:.04em}.legend{display:flex;flex-wrap:wrap;gap:10px 17px;margin-top:15px}.legend-item{display:inline-flex;align-items:center;gap:7px;color:var(--muted);font-size:.72rem}.dot{width:9px;height:9px;border-radius:3px;background:var(--dot)}
 .details{display:grid;grid-template-columns:minmax(170px,.7fr) 1.3fr;gap:18px;align-items:center;margin-top:19px;padding:17px 19px;border:1px solid var(--line);border-radius:16px;background:#ffffff08}.details-kicker{color:var(--muted);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase}.details-name{margin:4px 0 0;font-size:1.3rem}.details-symbol{color:#bcb0ff;font-size:2rem;font-weight:800}.details-text{margin:0;color:var(--muted);font-size:.86rem;line-height:1.6}.footnote{margin:16px 0 0;color:#727c98;font-size:.73rem;line-height:1.5}
+.mixture-quiz{margin-top:26px;padding:clamp(20px,4vw,34px);border:1px solid #66dacb38;border-radius:24px;background:radial-gradient(ellipse at 90% 0%,#36c9b61a,transparent 36rem),#0c1223c9;box-shadow:0 28px 90px #0004}.quiz-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:24px}.quiz-heading h2{margin:5px 0 8px;font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:-.035em}.quiz-heading p{max-width:620px;margin:0;color:var(--muted);font-size:.9rem;line-height:1.6}.quiz-tag{color:#72e3cf;font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.quiz-progress{flex:none;padding:8px 12px;border:1px solid #72e3cf45;border-radius:999px;color:#9bf1df;background:#40cbb014;font-size:.78rem;font-weight:700}.quiz-scene{display:grid;grid-template-columns:1fr minmax(110px,.4fr) 1fr;align-items:center;gap:14px;max-width:720px;margin:0 auto 20px}.ingredient-card,.mixture-card{display:grid;min-height:112px;place-content:center;gap:8px;padding:16px;border:1px solid #ffffff24;border-radius:17px;background:#ffffff08;text-align:center}.ingredient-card strong{font-size:1.15rem}.ingredient-card span,.mixture-card span{color:var(--muted);font-size:.76rem}.ingredient-icon{font-size:1.8rem}.mix-arrow{color:#7de6d2;font-size:1.8rem;text-align:center}.mixture-card{border-color:#62ddc74a;background:linear-gradient(145deg,#33cbb326,#6e74ff12);box-shadow:inset 0 0 24px #35d1b414}.quiz-actions{display:flex;justify-content:center;margin:0 0 22px}.quiz-button,.method-option{min-height:46px;padding:10px 16px;border:1px solid #72e3cf75;border-radius:12px;color:#eafffb;background:#0e302f;font:inherit;font-size:.86rem;font-weight:700;cursor:pointer;transition:transform .16s,border-color .16s,background .16s}.quiz-button:hover,.method-option:hover:not(:disabled){transform:translateY(-2px);border-color:#9bffec;background:#12433f}.quiz-button:focus-visible,.method-option:focus-visible{outline:2px solid #a8fff0;outline-offset:3px}.quiz-question{margin:18px 0 12px;text-align:center;font-size:1rem}.method-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;max-width:820px;margin:0 auto}.method-option{min-height:56px;border-color:#ffffff25;color:var(--ink);background:#ffffff09}.method-option:disabled{cursor:default;opacity:.7}.method-option.is-correct{border-color:#60e6a9;background:#1a664b;color:#e7fff2}.method-option.is-wrong{border-color:#ff8297;background:#622b3b;color:#fff0f2}.quiz-feedback{min-height:48px;max-width:820px;margin:17px auto 0;padding:12px 14px;border-radius:12px;color:#d9e2f5;background:#ffffff09;font-size:.86rem;line-height:1.55}.quiz-feedback:empty{display:none}.quiz-feedback.is-correct{color:#baffd7;background:#60e6a918}.quiz-feedback.is-wrong{color:#ffd3d8;background:#ff829718}.quiz-next{display:flex;justify-content:center;min-height:46px;margin:17px auto 0}.quiz-next[hidden]{display:none}.quiz-score{margin-top:14px;color:#aef5e5;text-align:center;font-size:.9rem;font-weight:700}.quiz-score[hidden]{display:none}
 .project-link{position:fixed;right:22px;bottom:20px;z-index:5;display:inline-flex;align-items:center;gap:9px;min-height:46px;padding:0 16px;border:1px solid #a99aff70;border-radius:999px;color:#f3f4ff;background:rgba(28,25,55,.96);box-shadow:0 8px 28px #0008,0 0 22px #9a8cff20;font-size:.82rem;font-weight:700;text-decoration:none;backdrop-filter:blur(12px);transition:transform .18s,border-color .18s,background .18s}.project-link:hover{transform:translateY(-2px);border-color:#c7bcff;background:#30285a}.project-link:focus-visible{outline:2px solid #c9bfff;outline-offset:3px}.project-link span:last-child{color:#c7bcff;font-size:1rem}
-@media(max-width:760px){.page{padding-top:19px}.hero{grid-template-columns:1fr;gap:25px;padding-top:56px}.video-card{max-width:480px}.table-section{padding:15px}.details{grid-template-columns:1fr;gap:9px}}
+@media(max-width:760px){.page{padding-top:19px}.hero{grid-template-columns:1fr;gap:25px;padding-top:56px}.video-card{max-width:480px}.table-section{padding:15px}.details{grid-template-columns:1fr;gap:9px}.method-options{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:480px){.project-link{right:14px;bottom:14px;min-height:43px;padding:0 13px;font-size:.76rem}}
+@media(max-width:440px){.quiz-heading{flex-direction:column}.quiz-scene{grid-template-columns:1fr;gap:8px}.ingredient-card,.mixture-card{min-height:82px}.mix-arrow{transform:rotate(90deg)}.method-options{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
 </style></head>
 <body><main class="page">
-<nav class="topbar" aria-label="Main navigation"><a class="brand" href="#" aria-label="Periodic Table home"><span class="brand-mark" title="Carbon, atomic number 6" aria-hidden="true"><span class="brand-mark-number">6</span><span class="brand-mark-symbol">C</span></span> THE LITTLE ELEMENTS LAB</a><a class="top-link" href="#elements">Explore all 118 elements ↓</a></nav>
+<nav class="topbar" aria-label="Main navigation"><a class="brand" href="#" aria-label="Periodic Table home"><span class="brand-mark" title="Carbon, atomic number 6" aria-hidden="true"><span class="brand-mark-number">6</span><span class="brand-mark-symbol">C</span></span> THE LITTLE ELEMENTS LAB</a><div class="tools"><a class="top-link" href="#elements">Explore all 118 elements ↓</a><a class="top-link" href="#mixture-quiz">Try the mixture quiz ↓</a></div></nav>
 <section class="hero" aria-labelledby="page-title"><div><p class="eyebrow">A tiny universe, all around us</p><h1 id="page-title">Meet the building blocks <span>of everything.</span></h1><p class="intro">From the air you breathe to the stars above, everything is made of elements. Pick one on the table and start exploring.</p></div>
 <aside class="video-card" aria-label="YouTube video"><div class="video-heading"><strong>Your YouTube link</strong><a href="https://www.youtube.com/watch?v=rz4Dd1I_fX0&amp;list=RDrz4Dd1I_fX0&amp;start_radio=1" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></div><div class="video-frame" id="video-frame"><button class="video-launch" id="video-launch" type="button" aria-label="Load and play the YouTube video"><span class="play-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></aside></section>
 <section class="table-section" id="elements" aria-labelledby="table-title"><div class="table-head"><div><h2 class="table-title" id="table-title">The periodic table</h2><p class="table-subtitle">118 elements · Select any tile to learn its name and family</p></div><div class="tools"><input id="search" type="search" placeholder="Search an element..." autocomplete="off" aria-label="Search elements">
@@ -34,8 +36,13 @@ input,select{min-height:42px;padding:0 13px;border:1px solid var(--line);border-
 <div class="table-scroll" tabindex="0" aria-label="Scrollable periodic table"><div class="periodic-grid" id="periodic-grid"></div><div class="series-disclosure" id="series-disclosure"><section class="series-panel-inner" id="series-panel-inner" aria-labelledby="series-panel-title" inert><div class="series-panel-head"><h3 class="series-panel-title" id="series-panel-title"></h3><button class="series-close" id="series-close" type="button">Close</button></div><div class="series-grid" id="series-grid"></div></section></div></div>
 <div class="legend" aria-label="Element families"><span class="legend-item"><i class="dot" style="--dot:#ff8297"></i>Alkali</span><span class="legend-item"><i class="dot" style="--dot:#ffbe70"></i>Alkaline earth</span><span class="legend-item"><i class="dot" style="--dot:#ffde7b"></i>Transition</span><span class="legend-item"><i class="dot" style="--dot:#65e4c2"></i>Post-transition</span><span class="legend-item"><i class="dot" style="--dot:#71d2fa"></i>Metalloid</span><span class="legend-item"><i class="dot" style="--dot:#76a4ff"></i>Nonmetal</span><span class="legend-item"><i class="dot" style="--dot:#b99fff"></i>Halogen</span><span class="legend-item"><i class="dot" style="--dot:#f499e3"></i>Noble gas</span><span class="legend-item"><i class="dot" style="--dot:#67bcff"></i>Lanthanoid</span><span class="legend-item"><i class="dot" style="--dot:#91a0ff"></i>Actinoid</span></div>
 <div class="details" aria-live="polite"><div><div class="details-kicker" id="details-kicker">Pick an element</div><h3 class="details-name" id="details-name">The whole universe awaits</h3></div><p class="details-text"><span class="details-symbol" id="details-symbol" aria-hidden="true">✦</span> &nbsp;<span id="details-description">Choose any tile to see its atomic number, symbol and element family.</span></p></div>
-<p class="footnote">A learning-friendly reference table. Family colors are simplified for exploring; classifications can vary between references.</p></section></main>
-<a class="project-link" href="https://hammy-boy.github.io/KiddoSprout-Family-Hub/#parent" target="_blank" rel="noopener noreferrer"><span>Visit My Best Project</span><span aria-hidden="true">↗</span></a>
+<p class="footnote">A learning-friendly reference table. Family colors are simplified for exploring; classifications can vary between references.</p></section>
+<section class="mixture-quiz" id="mixture-quiz" aria-labelledby="quiz-title"><div class="quiz-heading"><div><span class="quiz-tag">Interactive chemistry lab</span><h2 id="quiz-title">Mix it. Separate it.</h2><p>Two ingredients appear at random. Combine them into a mixture, then choose the best way to separate them again.</p></div><span class="quiz-progress" id="quiz-progress" aria-live="polite"></span></div>
+<div class="quiz-scene" aria-label="The ingredients and resulting mixture"><div class="ingredient-card"><span class="ingredient-icon" id="ingredient-one-icon" aria-hidden="true"></span><strong id="ingredient-one"></strong><span>Ingredient 1</span></div><span class="mix-arrow" aria-hidden="true">＋</span><div class="ingredient-card"><span class="ingredient-icon" id="ingredient-two-icon" aria-hidden="true"></span><strong id="ingredient-two"></strong><span>Ingredient 2</span></div></div>
+<div class="quiz-actions"><button class="quiz-button" id="mix-button" type="button">Combine into a mixture</button></div>
+<div id="mixture-stage" hidden><div class="mixture-card"><span aria-hidden="true">🧪</span><strong id="mixture-name"></strong><span>The ingredients are mixed, not chemically joined.</span></div><h3 class="quiz-question" id="quiz-question"></h3><div class="method-options" id="method-options" role="group" aria-label="Choose a separation method"></div><p class="quiz-feedback" id="quiz-feedback" aria-live="polite"></p><button class="quiz-button quiz-next" id="quiz-next" type="button" hidden>Next mixture →</button></div>
+<p class="quiz-score" id="quiz-score" aria-live="polite"></p></section></main>
+<a class="project-link" href="https://hammy-boy.github.io/KiddoSprout-Family-Hub/#parent" target="_blank" rel="noopener noreferrer"><span>KiddoSprout</span><span aria-hidden="true">↗</span></a>
 <script>
 const symbols = "H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe Cs Ba La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu Hf Ta W Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn Fr Ra Ac Th Pa U Np Pu Am Cm Bk Cf Es Fm Md No Lr Rf Db Sg Bh Hs Mt Ds Rg Cn Nh Fl Mc Lv Ts Og".split(" ");
 const names = [];
@@ -88,25 +95,35 @@ const seriesPanel = document.getElementById("series-panel-inner");
 const seriesGrid = document.getElementById("series-grid");
 const seriesTitle = document.getElementById("series-panel-title");
 const seriesTiles = { lanthanoid: [], actinoid: [] };
-let activeSeries = "";
+const activeSeries = new Set();
 function toggleSeries(family) {
-  const shouldOpen = activeSeries !== family || !seriesDisclosure.classList.contains("is-open");
-  if (!shouldOpen) {
-    activeSeries = "";
-    seriesDisclosure.classList.remove("is-open");
-    seriesPanel.inert = true;
+  if (activeSeries.has(family)) {
+    activeSeries.delete(family);
   } else {
-    activeSeries = family;
-    const series = familySeries[family];
-    seriesTitle.textContent = `${series.title} · Atomic numbers ${series.start + 1}–${series.end}`;
-    seriesGrid.replaceChildren(...seriesTiles[family]);
+    activeSeries.add(family);
+  }
+  if (activeSeries.size) {
+    const openSeries = [...activeSeries];
+    seriesTitle.textContent = openSeries.map((item) => familySeries[item].title).join(" + ");
+    const content = [];
+    for (const item of openSeries) {
+      const series = familySeries[item];
+      const label = document.createElement("div");
+      label.className = "series-label";
+      label.textContent = `${series.title} · Atomic numbers ${series.start + 1}–${series.end}`;
+      content.push(label, ...seriesTiles[item]);
+    }
+    seriesGrid.replaceChildren(...content);
     seriesDisclosure.classList.add("is-open");
     seriesPanel.inert = false;
-    filterElements();
+  } else {
+    seriesDisclosure.classList.remove("is-open");
+    seriesPanel.inert = true;
   }
   for (const button of grid.querySelectorAll(".series-toggle")) {
-    button.setAttribute("aria-expanded", String(shouldOpen && button.dataset.family === family));
+    button.setAttribute("aria-expanded", String(activeSeries.has(button.dataset.family)));
   }
+  filterElements();
 }
 for (const [family, series] of Object.entries(familySeries)) {
   const button = document.createElement("button");
@@ -123,8 +140,9 @@ for (const [family, series] of Object.entries(familySeries)) {
   grid.append(button);
 }
 document.getElementById("series-close").addEventListener("click", () => {
-  if (activeSeries) toggleSeries(activeSeries);
+  for (const family of [...activeSeries]) toggleSeries(family);
 });
+let selectedTile = null;
 symbols.forEach((symbol, index) => {
   const family = familyOf(symbol);
   const tile = document.createElement("button");
@@ -136,6 +154,9 @@ symbols.forEach((symbol, index) => {
   tile.setAttribute("aria-label", `${names[index]}, atomic number ${index + 1}, ${familyNames[family]}`);
   tile.innerHTML = `<span class="atomic-number">${index + 1}</span><span class="symbol">${symbol}</span><span class="element-name">${names[index]}</span>`;
   tile.addEventListener("click", () => {
+    selectedTile?.classList.remove("is-selected");
+    selectedTile = tile;
+    selectedTile.classList.add("is-selected");
     document.getElementById("details-kicker").textContent = `Atomic number ${index + 1} · ${familyNames[family]}`;
     document.getElementById("details-name").textContent = names[index];
     document.getElementById("details-symbol").textContent = symbol;
@@ -181,6 +202,8 @@ document.getElementById("video-launch").addEventListener("click", () => {
 function filterElements() {
   const query = search.value.trim().toLowerCase();
   const family = familySelect.value;
+  search.classList.toggle("has-selection", query.length > 0);
+  familySelect.classList.toggle("has-selection", family.length > 0);
   for (const tile of document.querySelectorAll(".element[data-name]")) {
     const matchesQuery = `${tile.dataset.name} ${tile.dataset.symbol} ${tile.querySelector(".atomic-number").textContent}`.toLowerCase().includes(query);
     const atomicNumber = Number(tile.querySelector(".atomic-number").textContent);
@@ -191,4 +214,110 @@ function filterElements() {
 }
 search.addEventListener("input", filterElements);
 familySelect.addEventListener("change", filterElements);
+const mixtureChallenges = [
+  { ingredients: [["Sand", "🏖️"], ["Water", "💧"]], mixture: "Sand and water", method: "filtration", explanation: "A filter lets the water pass through but traps the larger sand grains." },
+  { ingredients: [["Salt", "🧂"], ["Water", "💧"]], mixture: "Salt water", method: "evaporation", explanation: "Evaporating the water leaves the dissolved salt crystals behind." },
+  { ingredients: [["Iron filings", "🧲"], ["Sand", "🏖️"]], mixture: "Iron filings and sand", method: "magnetism", explanation: "A magnet attracts the iron filings but not the sand." },
+  { ingredients: [["Oil", "🫒"], ["Water", "💧"]], mixture: "Oil and water", method: "decanting", explanation: "The oil floats above the water, so the top layer can be carefully poured off (decanted)." },
+  { ingredients: [["Rice", "🍚"], ["Flour", "🌾"]], mixture: "Rice and flour", method: "sieving", explanation: "The fine flour falls through a sieve while the larger rice grains stay behind." },
+  { ingredients: [["Beans", "🫘"], ["Stones", "🪨"]], mixture: "Beans and stones", method: "hand-sorting", explanation: "The large, visible stones can be picked out by hand." },
+  { ingredients: [["Gravel", "🪨"], ["Sand", "🏖️"]], mixture: "Gravel and sand", method: "sieving", explanation: "The smaller sand grains pass through the sieve while the larger gravel stays behind." }
+];
+const separationMethods = [
+  ["filtration", "Filtration — filter out a solid"],
+  ["evaporation", "Evaporation — evaporate the liquid"],
+  ["magnetism", "Magnetism — use a magnet"],
+  ["decanting", "Decanting — carefully pour off a layer"],
+  ["sieving", "Sieving — separate by particle size"],
+  ["hand-sorting", "Hand sorting — pick the pieces apart"]
+];
+let quizOrder = [];
+let quizRound = 0;
+let quizPoints = 0;
+let quizAnswered = false;
+let mixtureCombined = false;
+const quizProgress = document.getElementById("quiz-progress");
+const mixtureStage = document.getElementById("mixture-stage");
+const methodOptions = document.getElementById("method-options");
+const quizFeedback = document.getElementById("quiz-feedback");
+const quizNext = document.getElementById("quiz-next");
+const quizScore = document.getElementById("quiz-score");
+function startMixtureQuiz() {
+  quizOrder = [];
+  quizRound = 0;
+  quizPoints = 0;
+  quizScore.textContent = "";
+  mixtureStage.hidden = true;
+  document.getElementById("mix-button").hidden = false;
+  addQuizChallengeBatch();
+  renderMixtureRound();
+}
+function addQuizChallengeBatch() {
+  const batch = mixtureChallenges.map((_, index) => index);
+  for (let index = batch.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [batch[index], batch[swapIndex]] = [batch[swapIndex], batch[index]];
+  }
+  quizOrder.push(...batch);
+}
+function renderMixtureRound() {
+  if (quizRound >= quizOrder.length) {
+    addQuizChallengeBatch();
+  }
+  const challenge = mixtureChallenges[quizOrder[quizRound]];
+  document.getElementById("ingredient-one-icon").textContent = challenge.ingredients[0][1];
+  document.getElementById("ingredient-one").textContent = challenge.ingredients[0][0];
+  document.getElementById("ingredient-two-icon").textContent = challenge.ingredients[1][1];
+  document.getElementById("ingredient-two").textContent = challenge.ingredients[1][0];
+  document.getElementById("mix-button").disabled = false;
+  mixtureStage.hidden = true;
+  quizFeedback.textContent = "";
+  quizProgress.textContent = `Question ${quizRound + 1}`;
+  quizScore.textContent = `Correct answers: ${quizPoints}`;
+  mixtureCombined = false;
+  quizAnswered = false;
+}
+document.getElementById("mix-button").addEventListener("click", (event) => {
+  if (mixtureCombined) return;
+  mixtureCombined = true;
+  const challenge = mixtureChallenges[quizOrder[quizRound]];
+  document.getElementById("mixture-name").textContent = challenge.mixture;
+  document.getElementById("quiz-question").textContent = `How would you separate ${challenge.mixture.toLowerCase()}?`;
+  methodOptions.replaceChildren(...separationMethods.map(([method, label]) => {
+    const option = document.createElement("button");
+    option.className = "method-option";
+    option.type = "button";
+    option.dataset.method = method;
+    option.textContent = label;
+    option.addEventListener("click", () => answerMixtureQuiz(option, challenge));
+    return option;
+  }));
+  quizFeedback.textContent = "";
+  quizFeedback.className = "quiz-feedback";
+  quizNext.hidden = true;
+  mixtureStage.hidden = false;
+  event.currentTarget.disabled = true;
+});
+function answerMixtureQuiz(selected, challenge) {
+  if (quizAnswered) return;
+  quizAnswered = true;
+  const isCorrect = selected.dataset.method === challenge.method;
+  if (isCorrect) quizPoints += 1;
+  for (const option of methodOptions.querySelectorAll(".method-option")) {
+    option.disabled = true;
+    if (option.dataset.method === challenge.method) option.classList.add("is-correct");
+  }
+  if (!isCorrect) selected.classList.add("is-wrong");
+  quizFeedback.textContent = `${isCorrect ? "That's right!" : "Not quite."} ${challenge.explanation}`;
+  quizFeedback.classList.add(isCorrect ? "is-correct" : "is-wrong");
+  quizProgress.textContent = `Question ${quizRound + 1}`;
+  quizScore.textContent = `Correct answers: ${quizPoints}`;
+  quizNext.textContent = "Next mixture →";
+  quizNext.hidden = false;
+}
+quizNext.addEventListener("click", () => {
+  quizRound += 1;
+  renderMixtureRound();
+});
+startMixtureQuiz();
 </script></body></html>
