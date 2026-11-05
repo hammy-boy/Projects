@@ -1,0 +1,14 @@
+{
+  "methods": ["google", "email"],
+  "headline": "Welcome to Wisp",
+  "subtitle": "Sign up or log in to start a conversation.",
+  "style": {
+    "mode": "light",
+    "accentColor": "#7663dc",
+    "backgroundColor": "#f8f8fc",
+    "panelColor": "#ffffff",
+    "textColor": "#29263e",
+    "fontFamily": "DM Sans, system-ui, sans-serif",
+    "borderRadius": 14
+  }
+}

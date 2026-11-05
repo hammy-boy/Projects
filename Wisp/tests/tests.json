@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Create a Wisp profile after sign-in",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": [
+      "authentication sign-in",
+      "profile creation",
+      "unique username validation",
+      "protected profile endpoint"
+    ],
+    "description": "Verifies a signed-in user can create a display name and username and see their profile in Wisp.",
+    "steps": [
+      "Sign in using the app's login screen",
+      "Enter display name 'Taylor' and username 'taylor_chat'",
+      "Continue to Wisp"
+    ],
+    "expected": "The Wisp messages screen appears and the signed-in profile shows Taylor and @taylor_chat."
+  },
+  {
+    "name": "Find a person and start a conversation",
+    "viewport": "desktop",
+    "covers": [
+      "people search by username or display name",
+      "exact email lookup without exposing email",
+      "conversation creation",
+      "conversation list persistence"
+    ],
+    "description": "Verifies a signed-in user can find another profile and open a direct conversation.",
+    "setup": [
+      "Create Actor B with display name 'Jordan' and username 'jordan_wisp'"
+    ],
+    "steps": [
+      "Sign in as Actor A",
+      "Search for 'jordan_wisp'",
+      "Open Jordan's result",
+      "Refresh the app"
+    ],
+    "expected": "A direct conversation with Jordan appears in Actor A's recent conversations after refresh."
+  },
+  {
+    "name": "Deliver a message live to the other person",
+    "viewport": "desktop",
+    "covers": [
+      "message creation",
+      "conversation membership authorization",
+      "realtime subscription and delivery",
+      "message history persistence"
+    ],
+    "description": "Verifies a message sent by one member appears for the other member in the same open conversation and remains in history.",
+    "setup": [
+      "Create Actor A and Actor B profiles",
+      "Create a direct conversation between Actor A and Actor B",
+      "Sign in as Actor B and open that conversation"
+    ],
+    "steps": [
+      "Keep Actor B's conversation open",
+      "Sign in as Actor A in a second browser context",
+      "Send 'Hello from Wisp' in the same conversation"
+    ],
+    "expected": "Actor B sees 'Hello from Wisp' appear in the open conversation without refreshing."
+  },
+  {
+    "name": "Block empty messages and unauthorized conversation access",
+    "viewport": "mobile",
+    "covers": [
+      "empty message validation",
+      "conversation membership permission boundary",
+      "mobile chat composer"
+    ],
+    "description": "Verifies blank messages are not sent and a user outside a conversation cannot read or send messages in it.",
+    "setup": [
+      "Create a conversation between Actor A and Actor B",
+      "Sign in as Actor C who is not a member"
+    ],
+    "steps": [
+      "Open the conversation interface on a mobile viewport",
+      "Try to send a message containing only spaces",
+      "Attempt to open the conversation as Actor C"
+    ],
+    "expected": "No blank message is created, and Actor C receives an access-denied response instead of conversation contents."
+  }
+]
